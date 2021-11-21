@@ -6,13 +6,12 @@ import Seo from "../components/seo"
 import ReactFlowGettingStarted from "../components/react-flow/reactFlowGettingStarted"
 import ReactFlowBasicFunctionality from "../components/react-flow/reactFlowBasicFunctionality"
 import ReactFlowCustomNodes from "../components/react-flow/reactFlowCustomNodes"
+import ReactFlowExamples from "../components/react-flow/reactFlowExamples"
 
 const SecondPage = () => (
   <Layout>
-    <Seo title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <ReactFlowGettingStarted />
+    <Seo title="Page five" />
+    <ReactFlowExamples />
     <hr />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
