@@ -11,9 +11,9 @@ import ReactFlowExamples from "../components/react-flow/reactFlowExamples"
 const SecondPage = () => (
   <Layout>
     <Seo title="Page five" />
+    <Link to="/">Go back to the homepage</Link>
     <ReactFlowExamples />
     <hr />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

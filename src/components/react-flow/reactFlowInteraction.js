@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from "gatsby"
 import ReactFlow, { addEdge, MiniMap, Controls } from 'react-flow-renderer';
 
 const initialElements = [
@@ -22,7 +22,7 @@ const initialElements = [
   },
   {
     id: 'interaction-4',
-    data: { label: 'Node 4' },
+    data: { label:     <Link to="/">Go back to the homepage</Link> },
     position: { x: 0, y: 460 },
   },
   {
@@ -36,7 +36,7 @@ const initialElements = [
 
 const onNodeDragStart = (event, node) => console.log('drag start', node);
 const onNodeDragStop = (event, node) => console.log('drag stop', node);
-const onElementClick = (event, element) => console.log('click', element);
+const onElementClick = (event, element) => console.log('click', element.data);
 const onPaneClick = (event) => console.log('onPaneClick', event);
 const onPaneScroll = (event) => console.log('onPaneScroll', event);
 const onPaneContextMenu = (event) => console.log('onPaneContextMenu', event);

@@ -11,9 +11,9 @@ import ReactFlowInteraction from "../components/react-flow/reactFlowInteraction"
 const SecondPage = () => (
   <Layout>
     <Seo title="Page six" />
+    <Link to="/">Go back to the homepage</Link>
     <ReactFlowInteraction />
     <hr />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

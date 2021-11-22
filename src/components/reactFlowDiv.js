@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactFlow, { Handle } from 'react-flow-renderer';
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 
 const elements = [
   {
     id: '1',
     type: 'input', // input node
     data: { label: <Link to="/page-2/">Go to page 2</Link> },
-    position: { x: 250, y: 25 },
+    position: { x: 0, y: 25 },
   },
   // default node
   {
@@ -18,21 +18,22 @@ const elements = [
   },
   {
     id: '3',
-    type: 'special', // output node
+    type: 'special', // special node
     data: { text: 'A custom "special" node' },
-    position: { x: 250, y: 250 },
+    position: { x: 0, y: 265 },
   },
   {
     id: '4',
     type: 'output', // output node
     data: { label: <Link to="/page-5/">Go to page 5</Link> },
-    position: { x: 450, y: 375 },
+    position: { x: 150, y: 375 },
   },
   {
     id: '5',
     type: 'output', // output node
-    data: { label: <Link to="/page-6/">Go to page 6</Link> },
-    position: { x: 450, y: 175 },
+    data: { label: <button onClick={()=>{navigate("/page-6/")}}>Page 6</button>
+  },
+    position: { x: 180, y: 200 },
   },
   // animated edge
   { id: 'e1-2', source: '1', target: '2', animated: true },
@@ -51,7 +52,7 @@ const customNodeStyles = {
 const CustomNodeComponent = ({ data }) => {
   return (
     <div style={customNodeStyles}>
-      <Handle type="target" position="left" style={{ borderRadius: 0 }} />
+      <Handle type="target" position="top" style={{ borderRadius: 0 }} />
       <div>{data.text}</div>
       <Handle
         type="source"
@@ -74,11 +75,13 @@ export default () => (
   <div style={{ height: 500 }}>
     <ReactFlow 
       elements={elements} 
-      nodeTypes={nodeTypes} 
       elementsSelectable={true}
-      nodesDraggable={true}
-      paneMoveable={false}
+      nodesDraggable={false}
+
+      nodeTypes={nodeTypes} 
+      paneMoveable={true}
       zoomOnScroll={false}
+
     />
   </div>
 );

@@ -10,11 +10,9 @@ import ReactFlowCustomNodes from "../components/react-flow/reactFlowCustomNodes"
 const SecondPage = () => (
   <Layout>
     <Seo title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <Link to="/">Go back to the homepage</Link>
     <ReactFlowGettingStarted />
     <hr />
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
