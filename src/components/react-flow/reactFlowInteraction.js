@@ -7,22 +7,23 @@ const initialElements = [
     id: 'interaction-1',
     type: 'input',
     data: { label: 'Node 1' },
-    position: { x: 250, y: 5 },
+    position: { x: 0, y: 340 },
   },
   {
     id: 'interaction-2',
     data: { label: 'Node 2' },
-    position: { x: 100, y: 100 },
+    position: { x: 160, y: 230 },
   },
   {
     id: 'interaction-3',
     data: { label: 'Node 3' },
-    position: { x: 400, y: 100 },
+    position: { x: 0, y: 400 },
+    
   },
   {
     id: 'interaction-4',
     data: { label: 'Node 4' },
-    position: { x: 400, y: 200 },
+    position: { x: 0, y: 460 },
   },
   {
     id: 'interaction-e1-2',
@@ -80,7 +81,6 @@ const InteractionFlow = () => {
       onPaneContextMenu={captureZoomClick ? onPaneContextMenu : undefined}
       onLoad={onLoad}
     >
-      <MiniMap />
       <Controls />
 
       <div
