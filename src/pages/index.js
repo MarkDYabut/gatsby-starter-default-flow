@@ -9,6 +9,11 @@ import ReactFlowDiv from "../components/reactFlowDiv"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+
+    <p>live reload as a pwa?</p>
+    <p>and are you a cool guy?</p>
+    <p>yes</p>
+
     <ReactFlowDiv />
 
     <p>
@@ -27,6 +32,8 @@ const IndexPage = () => (
 
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
+    <p>live reload?</p>
+    <p>yessir!</p>
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"

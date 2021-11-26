@@ -79,7 +79,7 @@ export default () => (
       nodesDraggable={false}
 
       nodeTypes={nodeTypes} 
-      paneMoveable={true}
+      paneMoveable={false}
       zoomOnScroll={false}
 
     />
