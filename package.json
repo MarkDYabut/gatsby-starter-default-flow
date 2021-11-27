@@ -5,7 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
     "gatsby": "^4.2.0",
+    "gatsby-plugin-emotion": "^7.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
     "gatsby-plugin-manifest": "^4.2.0",
@@ -29,8 +32,8 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "ipconfig getifaddr en0 & gatsby develop -H 0.0.0.0",
     "develop mac": "ipconfig getifaddr en0 & gatsby develop -H 0.0.0.0",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
