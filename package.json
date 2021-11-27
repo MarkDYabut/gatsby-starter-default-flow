@@ -30,6 +30,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "ipconfig getifaddr en0 & gatsby develop -H 0.0.0.0",
+    "develop mac": "ipconfig getifaddr en0 & gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
